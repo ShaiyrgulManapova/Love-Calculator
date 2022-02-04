@@ -6,7 +6,7 @@
 
 body {
 	background-color: pink;
-	font-family: poppins;
+	font-family: Pacifico, sans-serif
 }
 
 .container {
@@ -34,7 +34,7 @@ body {
 }
 
 .content h1 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-align: center;
 	color: #d7385c;
 }
@@ -63,7 +63,7 @@ a {
 	margin: 0px;
 	color: #fff;
 	font-size: 20px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ a {
 	margin: 20px;
 	padding: 20px 50px;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 20px;
 	text-align: center;
 }
@@ -83,7 +83,41 @@ a {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 20px;
 	font-weight: italic;
 }
+
+@media screen and (max-width: 600px) {
+	.container {
+		width: 90vw;
+		height: 95%;
+		padding: 20px;
+	}
+
+	.content {
+		margin-left: 0px;
+		font-size: 10px;
+	}
+
+	.content img {
+		margin-left: 0px;
+	}
+
+	.inputarea {
+		flex-direction: column;
+	}
+
+	.inputarea input {
+		width: 100%;
+		margin: 5px;
+	}
+
+	a {
+		padding: 10px;
+	}
+}
+	
+
+
+	

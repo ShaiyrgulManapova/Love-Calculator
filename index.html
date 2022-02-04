@@ -7,6 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Love Calculator</title>
 
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,14 +19,14 @@
 <body>
 	<div class="container">
 		<div class="content">
-			<img src="heart.png" alt="heart image">
-			<h1>Love Calculator</h1>
+			<img src="/heart.png" alt="heart image">
+			<h1>Cүйүү эсептегичи</h1>
 			<div class="inputarea">
-				<input type="text" placeholder="Your Name" id="NameOne" onfocus="this.value = ''">
-				<input type="text" placeholder="Your Lover" id="NameTwo" onfocus="this.value = ''">
+				<input type="text" placeholder="Атыңыз" id="NameOne" onfocus="this.value = ''">
+				<input type="text" placeholder="Сүйүктүүңүз" id="NameTwo" onfocus="this.value = ''">
 			</div>
-			<a href="#" onclick="loveCalculator()">Calculate</a>
-			<p id="print">Your relationship result here</p>
+			<a href="#" onclick="loveCalculator()">Эсептөө</a>
+			<p id="print">Сиздин мамилеңиз жыйынтыгы :</p>
 			<p id="statement"></p>
 		</div>
 	</div>
@@ -41,13 +46,22 @@
 			} 
 			else {
 				var random = Math.floor(Math.random() * 100);
-				document.getElementById("print").innerHTML = name1 + " and " + name2 + " = " + random + "%" + "of love";
+				document.getElementById("print").innerHTML = name1 + " + " + name2 + " = " + random + "%" + " " + "сүйүү 💗";
 			}	
-			if(random<=10 || random<=50){
-				document.getElementById("statement").innerHTML = "Good Relationship";
+			if(random<=10 || random<=30){
+				document.getElementById("statement").innerHTML = "Көп ойлодум биз экөөбүз кимбиз деп 👀";
 			}
-			else if (random<=51 || random<=100){
-				document.getElementById("statement").innerHTML = "Lovely Relationship";
+			else if (random<=31 || random<=50){
+				document.getElementById("statement").innerHTML = "Эмнегедир жолукканда мен сага, Билбей калам айтарымды эмне деп 💕";
+			}
+			else if (random<=50 || random<=80){
+				document.getElementById("statement").innerHTML = "Турмуш жолун бир басалык 😘";
+			}
+			else if (random<=81 || random<=90){
+				document.getElementById("statement").innerHTML = "Балам, куш боо бекем болсун!❤ Кызым, күйөө жолдош кут болсун!❤";
+			}
+			else if (random<=91 || random<=100){
+				document.getElementById("statement").innerHTML = "Эми күмөн такыр жок, Бактылуу билет сыяктуу. Утуп алдым сүйүүнү! Утуп алдым бакытты!😁";
 			}
 		}
 	</script>
